@@ -1,0 +1,15 @@
+import React from "react";
+import { Icon } from "expo";
+
+export default class TabBarIcon extends React.Component {
+    render() {
+        return (
+            <Icon.Ionicons
+                name={this.props.name}
+                size={35}
+                style={{ marginBottom: -3 }}
+                color={this.props.focused ? "rgb(255,100,97)" : 'gray'}
+            />
+        );
+    }
+}
